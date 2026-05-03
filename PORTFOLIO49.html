@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedika Lakhotiya | B.Tech Computer Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap');
+
+    :root {
+        /* Sunset Beach Palette */
+        --sand-light: #fdf5e6;
+        --sunset-orange: #f4a261;
+        --ocean-blue: #2a9d8f;
+        --twilight-deep: #264653;
+        --horizon-pink: #e76f51;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        color: var(--twilight-deep);
+        font-family: 'Inter', sans-serif;
+        
+        /* Sunset Gradient Background */
+        background: linear-gradient(135deg, 
+            var(--sand-light) 0%, 
+            #fee4d2 40%, 
+            #fcd5ce 70%, 
+            #d8e2dc 100%);
+        background-attachment: fixed;
+
+        /* Technical Overlay: Subtle wave-pattern grid */
+        background-image: 
+            linear-gradient(rgba(253, 245, 230, 0.92), rgba(253, 245, 230, 0.92)),
+            url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 13 50 13c10.353 0 16.36 2.347 25.96 5.937l1.768.661c.369.138.731.272 1.088.402H21.184z' fill='%23264653' fill-opacity='0.04'/%3E%3C/svg%3E");
+    }
+
+    /* Editorial Sunset Headings */
+    h1, h2, .fashion-head {
+        font-family: 'Playfair Display', serif;
+        background: linear-gradient(to right, var(--twilight-deep), var(--horizon-pink));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.01em;
+    }
+
+    /* Glassmorphism Cards (Beach-Glass style) */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .glass-card:hover {
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(231, 111, 81, 0.15);
+        border-color: var(--horizon-pink);
+    }
+
+    /* Buttons with Horizon Animation */
+    .btn-sunset {
+        background: var(--twilight-deep);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+    }
+
+    .btn-sunset:hover {
+        background: var(--horizon-pink);
+        box-shadow: 0 10px 20px rgba(231, 111, 81, 0.3);
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <header class="max-w-5xl mx-auto px-6 py-20 flex flex-col items-center text-center">
+        <h1 class="text-5xl font-extrabold text-blue-600 mb-4">Hi, I'm Vedika Lakhotiya</h1>
+        <p class="text-xl text-gray-600 max-w-2xl">
+            1st Year B.Tech Student at MIT Academy Of Engineering. Currently exploring the world of 
+            <strong>Data Structures</strong> and <strong>Web Technologies</strong>.
+        </p>
+        <div class="mt-8 space-x-4">
+            <a href="aboutme.html" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+        About Me
+    </a>
+            <a href="mywork.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">View My Work</a>
+            <a href="mycertificates.html" class="bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-600 transition">
+        📜 Certifications
+    </a>
+            <a href="contactme.html" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Contact Me</a>
+            
+        </div>
+    </header>
+
+    <section class="bg-white py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-10 text-center">Current Skillset</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 border rounded-xl shadow-sm">
+                    <p class="font-bold text-lg">C / C++</p>
+                    <span class="text-sm text-gray-500">Academic Core</span>
+                </div>
+                <div class="p-4 border rounded-xl shadow-sm">
+                    <p class="font-bold text-lg">Python</p>
+                    <span class="text-sm text-gray-500">Automation & Logic</span>
+                </div>
+                <div class="p-4 border rounded-xl shadow-sm">
+                    <p class="font-bold text-lg">HTML/CSS</p>
+                    <span class="text-sm text-gray-500">Frontend Basics</span>
+                </div>
+                <div class="p-4 border rounded-xl shadow-sm">
+                    <p class="font-bold text-lg">Git</p>
+                    <span class="text-sm text-gray-500">Version Control</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-10">Freshman Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow-md border">
+                <h3 class="text-xl font-bold mb-2">Personal Portfolio Website</h3>
+                <p class="project-desc">Designed and developed a responsive portfolio website to showcase my skills, projects, and achievements using semantic HTML and modern CSS techniques.</p>
+                <a href="#" class="text-blue-600 font-medium hover:underline">Source Code &rarr;</a>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md border">
+                <h3 class="text-xl font-bold mb-2">Digital Visualization Project</h3>
+                <p class="text-gray-600 mb-4">A Case Study evaluated using OLAB Cube, Tableau, Orange Tool connecting the given data set and solving problems.</p>
+                <a href="DV Final Project.pdf" class="text-blue-600 font-medium hover:underline">Source Code &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        &copy; 2026 Vedika Lakhotiya. Built with curiosity.
+    </footer>
+
+</body>
+</html>

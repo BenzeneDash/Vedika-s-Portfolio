@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Vedika Lakhotiya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    :root {
+        /* Ocean Depth Palette */
+        --ocean-deep: #0f172a;
+        --ocean-mid: #1e40af;
+        --ocean-light: #38bdf8;
+        --foam: rgba(255, 255, 255, 0.8);
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        color: #f1f5f9;
+        /* Gradient representing the transition from deep water to the horizon */
+        background: linear-gradient(180deg, #0c4a6e 0%, #082f49 100%);
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* Animated Ocean Wave Background */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-31.8z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+        background-repeat: repeat-x;
+        background-position: bottom;
+        background-size: 50% auto;
+        animation: wave-move 20s linear infinite;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    @keyframes wave-move {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+
+    /* Typography & Card Styling */
+    h1 {
+        color: var(--ocean-light) !important;
+        text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    }
+
+    /* Targeting the existing White cards to make them "Sea-Glass" */
+    .bg-white, .glass-card {
+        background: rgba(15, 23, 42, 0.6) !important;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(56, 189, 248, 0.2) !important;
+        color: #e2e8f0 !important;
+    }
+
+    strong {
+        color: var(--ocean-light);
+    }
+
+    /* Section highlight colors */
+    .bg-blue-50 {
+        background: rgba(30, 64, 175, 0.3) !important;
+        border-left: 4px solid var(--ocean-light);
+    }
+
+    .bg-amber-50 {
+        background: rgba(180, 83, 9, 0.2) !important;
+        border-left: 4px solid #fbbf24;
+    }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <nav class="p-6">
+        <a href="PORTFOLIO49.html" class="text-blue-600 font-semibold hover:underline">← Back to Home</a>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-10">
+        <h1 class="text-4xl font-extrabold text-blue-600 mb-6">About Me</h1>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-md border space-y-6">
+            <p class="text-lg leading-relaxed">
+                I am a first-year **B.Tech Computer Engineering** student based in Pune. My academic journey is driven by a fascination with how code can transform user experiences, specifically through Data Structures and Web Technologies.
+                I love turning ideas into reality through code — whether it's a clean webpage or a sharp algorithm.
+                I've built a solid foundation in HTML & CSS for web design, and I'm actively expanding my programming toolkit with C and Java. I've also completed Python Essentials 1 & 2 through Cisco Networking Academy, and earned AI certifications from Anthropic.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4 pt-4">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-blue-800">Education</h3>
+                    <p class="text-sm">B.Tech in Computer Engineering<br>MIT Academy Of Engineering</p>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-amber-800">Interests</h3>
+                    <p class="text-sm">Exploring Artificial Intelligence, Photography, Coding</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

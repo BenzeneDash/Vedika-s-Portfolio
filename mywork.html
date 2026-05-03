@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work | Vedika Lakhotiya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    :root {
+        /* Sea Shell Palette */
+        --pearl-white: #fdfcfb;
+        --seashell-pink: #fff5f0;
+        --conch-coral: #f3a683;
+        --sand-beige: #e5e5e5;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background-color: var(--pearl-white);
+        color: #4a4a4a;
+        position: relative;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Sea Shell Background Layer */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Geometric Sea Shell SVG Pattern at 20% Opacity */
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0c-11.046 0-20 8.954-20 20 0 1.34.132 2.65.385 3.914L1.748 44.553C.635 45.753 0 47.318 0 48.966V75c0 2.76 2.24 5 5 5h70c2.76 0 5-2.24 5-5V48.966c0-1.648-.635-3.213-1.748-4.413L59.615 23.914C59.868 22.65 60 21.34 60 20c0-11.046-8.954-20-20-20z' fill='%23f3a683' fill-opacity='0.2'/%3E%3C/svg%3E");
+        background-repeat: repeat;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    /* Editorial Headings with Shell-Inspired Gradients */
+    h1 {
+        background: linear-gradient(45deg, #2c3e50, var(--conch-coral));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Playfair Display', serif;
+    }
+
+    /* Styling existing White Cards as 'Pearl-Glass' */
+    .bg-white, .glass-card {
+        background: rgba(255, 255, 255, 0.7) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(243, 166, 131, 0.3) !important;
+        border-radius: 16px !important;
+        transition: transform 0.3s ease;
+    }
+
+    .bg-white:hover {
+        transform: translateY(-5px);
+        border-color: var(--conch-coral) !important;
+    }
+
+    /* Accents for Project Categories */
+    .text-blue-600 {
+        color: #576574 !important; /* Muted slate for technical contrast */
+    }
+
+    .text-amber-600 {
+        color: var(--conch-coral) !important;
+    }
+
+    /* Horizontal lines and borders */
+    .border {
+        border-color: rgba(0, 0, 0, 0.05) !important;
+    }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="p-6"><a href="PORTFOLIO49.html" class="text-blue-600 font-semibold">← Back to Home</a></nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <h1 class="text-4xl font-extrabold text-blue-600 mb-10 text-center">Portfolio & Projects</h1>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white overflow-hidden rounded-2xl shadow-sm border">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-600 uppercase">Web Development</span>
+                    <h3 class="text-xl font-bold mt-2">My Portfolio</h3>
+                    <p class="text-gray-600 mt-2">A professional web portfolio featuring custom HTML/CSS with a professional aesthetic.</p>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-white overflow-hidden rounded-2xl shadow-sm border">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-amber-600 uppercase">Data Visualization</span>
+                    <h3 class="text-xl font-bold mt-2">Case Study</h3>
+                    <p class="text-gray-600 mt-2">A Case Study evaluated using OLAB Cube, Tableau, Orange Tool connecting the given data set and solving problems.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
